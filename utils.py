@@ -34,7 +34,7 @@ def convert_file(df, col_name, data_type, col_names=None):
     elif data_type == 'str_m':
         if col_names is None:
             raise ValueError("When data_type is 'str_m', col_names must be provided.")
-        df[col_names] = df[col_names].astype('string')
+        df[col_names] = df[col_names].astype(str)
     else:
         raise ValueError("Invalid data_type. Valid options are 'str', 'date', and 'str_m'.")
 
