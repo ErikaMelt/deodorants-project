@@ -1,5 +1,5 @@
 import pandas as pd
-
+import re
 
 def convert_file(df, col_name, data_type, col_names=None):
     """
@@ -39,6 +39,11 @@ def convert_file(df, col_name, data_type, col_names=None):
         raise ValueError("Invalid data_type. Valid options are 'str', 'date', and 'str_m'.")
 
     return df
+
+
+def remove_non_ascii(text):
+    return re.sub(r'[^\x00-\x7F]+', '', text)
+
 
 
 #%%
