@@ -45,4 +45,8 @@ def convert_file(df, col_name, data_type, col_names=None):
 def remove_non_ascii(text):
     return re.sub(r'[^\x00-\x7F]+', '', text)
 
-# %%
+
+def replace_regex(df, col_name, regex, value):
+    df[col_name] = df[col_name].replace(to_replace=regex, value=value, regex=True)
+
+#%%
