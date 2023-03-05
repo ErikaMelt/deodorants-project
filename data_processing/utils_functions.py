@@ -1,5 +1,4 @@
 import pandas as pd
-import re
 
 
 def convert_file(df, col_name, data_type, col_names=None):
@@ -42,11 +41,16 @@ def convert_file(df, col_name, data_type, col_names=None):
     return df
 
 
-def remove_non_ascii(text):
-    return re.sub(r'[^\x00-\x7F]+', '', text)
+def remove_non_ascii(df: object, col_name: str) -> object:
+    """
+
+    :param df:
+    :param col_name:
+    """
+    df[col_name] = df[col_name].replace(to_replace=r'[^\x00-\x7F]+', value='', regex=True)
 
 
 def replace_regex(df, col_name, regex, value):
     df[col_name] = df[col_name].replace(to_replace=regex, value=value, regex=True)
 
-#%%
+
