@@ -3,7 +3,7 @@ from google.cloud import storage
 from google.cloud.exceptions import NotFound, Forbidden
 
 
-def convert_file(df, col_name, data_type, col_names=None):
+def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
     """
     Convert a column in a DataFrame to a specified data type.
 
@@ -27,12 +27,17 @@ def convert_file(df, col_name, data_type, col_names=None):
     ------
     ValueError
         If an invalid data type is provided.
+        :param data_type:
+        :param df:
+        :param col_name:
+        :param col_names:
+        :param date_format:
     """
 
     if data_type == 'str':
         df[col_name] = df[col_name].astype(str)
     elif data_type == 'date':
-        df[col_name] = pd.to_datetime(df[col_name], format='%Y%m%d', errors='coerce')
+        df[col_name] = pd.to_datetime(df[col_name], format=date_format)
     elif data_type == 'str_m':
         if col_names is None:
             raise ValueError("When data_type is 'str_m', col_names must be provided.")
