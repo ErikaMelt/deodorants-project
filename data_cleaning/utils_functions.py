@@ -6,7 +6,6 @@ from google.cloud.exceptions import NotFound, Forbidden
 def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
     """
     Convert a column in a DataFrame to a specified data type.
-
     Parameters
     ----------
     df : pandas.DataFrame
@@ -17,12 +16,10 @@ def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
         The data type to convert the column to. Valid options are 'str', 'date', and 'str_m'.
     col_names : list of str, optional
         A list of column names to be converted. Only used when data_type is 'str_m'.
-
     Returns
     -------
     pandas.DataFrame
         The converted DataFrame.
-
     Raises
     ------
     ValueError
@@ -46,15 +43,6 @@ def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
         raise ValueError("Invalid data_type. Valid options are 'str', 'date', and 'str_m'.")
 
     return df
-
-
-def remove_non_ascii(df: object, col_name: str) -> object:
-    """
-
-    :param df:
-    :param col_name:
-    """
-    df[col_name] = df[col_name].replace(to_replace=r'[^\x00-\x7F]+', value='', regex=True)
 
 
 def replace_regex(df, col_name, regex, value):
@@ -90,7 +78,3 @@ def upload_to_bucket(bucket_name: str, file_path: str, blob_name: str) -> None:
         return
 
     print(f"File {file_path} uploaded successfully to bucket {bucket_name}/{blob_name}")
-
-
-
-
