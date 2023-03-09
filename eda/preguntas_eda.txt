@@ -37,4 +37,11 @@ Realizar una comparación entre las ventas y la duración de la promoción, es d
 15. Relación id_cadena con id_producto, supongo que con esta relación se puede ver que productos vende más una cadena en particular.
 16. Con respecto a latitud y longitud, se puede hacer un gráfico que relacione la ubicación con las ventas por ejemplo, para ver si hay alguna zona donde se produzcan más ventas que otras.
 
+17. Cuando se vende mas un producto cuando tiene promociones o cuando no tiene promociones?  Relacionar las ventas del producto si tiene promocion y cuando no tiene promocion.
+ERIKA
+
+18. Cuales productos no se venden asi tengan una promocion?
+19. Cantidad de inventario de productos que mas se venden?
+20. Cantidad de inventario del producto que menos se vende?
+
 
