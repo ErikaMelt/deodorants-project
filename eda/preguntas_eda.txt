@@ -1,0 +1,40 @@
+RESUMEN LISTA DE PREGUNTAS PARA EMPEZAR A TRABAJAR
+
+Tenemos tres grupos de datos:
+
+- Movimientos con Promociones   (136.278 registros)
+- Movimientos sin Promociones   (7.628.466 registros)
+- Movimientos sin  Promociones  y sin informacion de Producto (591.692)
+(Esto corresponde a los 10 productos adicionales que estan en la tabla de movimientos y no en la de productos)
+
+Preguntas:
+
+1. Cuales son los productos que tienen mayor volumen de ventas
+2. Cuales son los productos que tienen un precio unitario mayor a la media.
+3. Cuales son los productos que tienen un precio unitario menor a la media.
+4. Como es el comportamiento de ventas de productos por locales (idb)
+5. Como es el comportamiento de ventas de productos por meses agrupado por año y por locales.
+6. Cual es el comportamiento de ventas de productos por estaciones del ano (invierno, verano, primavera, otoño) crear una nueva columna para agrupar los meses por estaciones del año.
+Tener en cuenta estas fechas:
+En Argentina las estaciones son las siguientes:
+Verano (21 de diciembre a 20 de marzo).
+Otoño (21 de marzo a 20 de junio).
+Invierno (21 de junio a 20 de septiembre).
+Primavera (21 de septiembre a 20 de diciembre).
+También, del 18 al 29 de julio suelen ser las vacaciones escolares de invierno en Argentina. Y bueno, también está semana Santa, que es igual en todos lados.
+
+7. Cual es el producto que tiene mayor rotacion por local, por ano, por mes.
+8. Cual es el producto que tiene menor rotacion por local, por ano, por mes.
+9. Cual es el mes del anno que mas se venden desodorantes, que dia de la semana?
+10. Que tan acertada son las estimaciones de ventas en unidades d ela promocion vs. lo que realmente se vende del producto.
+11. Cambia el precio unitario de venta para productos dependiendo del local donde se venda?
+12. Cual local vende los productos mas caros en comparacion con otros locales.
+13. Cual local tiene el mayor volumen de ventas? - Es la zona del local una zona de ingresos altos, medios o bajos.  (podriamos crear una columna para clasificar los locales).
+
+14. Que impacto tiene la duracion de la promocion en el volumen de ventas?
+Realizar una comparación entre las ventas y la duración de la promoción, es decir, si la promoción duró más se produjeron más ventas? Esto es un poco complicado porque imagino que de acuerdo al % de descuento puede variar.
+
+15. Relación id_cadena con id_producto, supongo que con esta relación se puede ver que productos vende más una cadena en particular.
+16. Con respecto a latitud y longitud, se puede hacer un gráfico que relacione la ubicación con las ventas por ejemplo, para ver si hay alguna zona donde se produzcan más ventas que otras.
+
+
