@@ -45,7 +45,15 @@ def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
     return df
 
 
-def replace_regex(df, col_name, regex, value):
+def replace_regex(df: object, col_name: str, regex: str, value: str) -> object:
+    """
+    Find a regex pattern in the string and replace with the value passed.
+
+    :param df: dataframe to replace regex
+    :param col_name: column where the replacement will be done
+    :param regex: pattern to find
+    :param value: value to replace
+    """
     df[col_name] = df[col_name].replace(to_replace=regex, value=value, regex=True)
 
 
