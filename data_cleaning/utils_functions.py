@@ -35,6 +35,8 @@ def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
         df[col_name] = df[col_name].astype(str)
     elif data_type == 'date':
         df[col_name] = pd.to_datetime(df[col_name], format=date_format)
+    elif data_type == 'int':
+        df[col_name] = df[col_name].astype(int)
     elif data_type == 'str_m':
         if col_names is None:
             raise ValueError("When data_type is 'str_m', col_names must be provided.")
