@@ -88,3 +88,8 @@ def upload_to_bucket(bucket_name: str, file_path: str, blob_name: str) -> None:
         return
 
     print(f"File {file_path} uploaded successfully to bucket {bucket_name}/{blob_name}")
+
+
+def concat_dataframes(df_target: object, df_source: object) -> object:
+    df_target = pd.concat([df_target, df_source], axis=0)
+    return df_target
