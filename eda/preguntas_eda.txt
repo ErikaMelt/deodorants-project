@@ -2,7 +2,7 @@ RESUMEN LISTA DE PREGUNTAS PARA EMPEZAR A TRABAJAR
 
 Tenemos tres grupos de datos:
 
-- Movimientos con Promociones   (136.278 registros)
+- Movimientos con Promociones   (129.522 registros)
 - Movimientos sin Promociones   (7.628.466 registros)
 - Movimientos sin  Promociones  y sin informacion de Producto (591.692)
 (Esto corresponde a los 10 productos adicionales que estan en la tabla de movimientos y no en la de productos)
@@ -42,5 +42,10 @@ Realizar una comparación entre las ventas y la duración de la promoción, es d
 18. Cuales productos no se venden asi tengan una promocion?
 19. Cantidad de inventario de productos que mas se venden?
 20. Cantidad de inventario del producto que menos se vende?
+
+
+21. Precios unitarios cambian dependiendo del local.
+22. Si con la tabla podemos ver el porcentaje de descuentoo si por las diferencias de precio unitario del mismo producto en un mismo local se puede establecer la promocion.
+
 
 
