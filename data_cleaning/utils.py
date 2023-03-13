@@ -1,11 +1,9 @@
 from google.cloud import storage
 from google.cloud.exceptions import Forbidden
-from google.cloud import bigquery
-from google.cloud.exceptions import NotFound, BadRequest
-from google.oauth2.service_account import Credentials
-import time
+from google.cloud.exceptions import NotFound
 import pandas as pd
 import datetime
+
 
 def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
     """
@@ -52,7 +50,7 @@ def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
     return df
 
 
-def replace_regex(df: object, col_name: str, regex: str, value: str) -> object:
+def replace_regex(df: object, col_name: str, regex: str, value: str):
     """
     Find a regex pattern in the string and replace with the value passed.
 
@@ -95,47 +93,6 @@ def upload_to_bucket(bucket_name: str, file_path: str, blob_name: str) -> None:
     print(f"File {file_path} uploaded successfully to bucket {bucket_name}/{blob_name}")
 
 
-def get_data_big_query():
-    try:
-        key_path = 'deodorants-7c413894015d.json'
-        credentials = Credentials.from_service_account_file(key_path)
-        client = bigquery.Client(credentials=credentials)
-
-        sql = """
-        SELECT *
-        FROM `deodorants.deodorants_trans.deodorants_merged` 
-        ORDER BY fecha_trans DESC 
-        """
-
-        # Start the query job
-        query_job = client.query(sql)
-
-        while query_job.state != 'DONE':
-            query_job.result()
-            time.sleep(3)
-
-        if query_job.state == 'DONE':
-            # Read the data in chunks and concatenate the results
-            df_list = []
-            for i, row in enumerate(query_job.result(max_results=500000)):
-                row_dict = dict(row.items())
-                df_list.append(pd.DataFrame(row_dict, index=[i]))
-                print(f'Reading chunk {len(df_list)}')
-            df = pd.concat(df_list)
-            return df
-        else:
-            print(query_job.result())
-
-        return 'done'
-
-    except NotFound as e:
-        print(f'BigQuery table not found: {e}')
-    except BadRequest as e:
-        print(f'Invalid BigQuery request: {e}')
-    except Exception as e:
-        print(f'An error occurred while retrieving data from BigQuery: {e}')
-
-
 def get_season(date):
     year = date.year
     seasons = [('invierno', datetime.date(year, 12, 21), datetime.date(year + 1, 3, 20)),
@@ -148,7 +105,13 @@ def get_season(date):
     return 'invierno'
 
 
-
-
+def remove_duplicates(s):
+    seen = set()
+    result = []
+    for word in s.split():
+        if word not in seen:
+            result.append(word)
+            seen.add(word)
+    return " ".join(result)
 
 
