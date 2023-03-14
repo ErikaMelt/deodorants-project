@@ -1,51 +1,36 @@
 RESUMEN LISTA DE PREGUNTAS PARA EMPEZAR A TRABAJAR
 
-Tenemos tres grupos de datos:
-
-- Movimientos con Promociones   (129.522 registros)
-- Movimientos sin Promociones   (7.628.466 registros)
-- Movimientos sin  Promociones  y sin informacion de Producto (591.692)
-(Esto corresponde a los 10 productos adicionales que estan en la tabla de movimientos y no en la de productos)
-
+Algunas preguntas se pueden unir y reducir el numero de preguntas. 
 Preguntas:
 
 ERIKA
-1. Cuales son los productos que tienen mayor volumen de ventas
-2. Cuales son los productos que tienen un precio unitario mayor a la media.
-3. Cuales son los productos que tienen un precio unitario menor a la media.
-4. Como es el comportamiento de ventas de productos por locales (idb)
-5. Como es el comportamiento de ventas de productos por meses agrupado por año y por locales.
-6. Cual es el comportamiento de ventas de productos por estaciones del ano (invierno, verano, primavera, otoño) crear una nueva columna para agrupar los meses por estaciones del año.
-Tener en cuenta estas fechas:
-En Argentina las estaciones son las siguientes:
-Verano (21 de diciembre a 20 de marzo).
-Otoño (21 de marzo a 20 de junio).
-Invierno (21 de junio a 20 de septiembre).
-Primavera (21 de septiembre a 20 de diciembre).
-También, del 18 al 29 de julio suelen ser las vacaciones escolares de invierno en Argentina. Y bueno, también está semana Santa, que es igual en todos lados.
+1. Productos con mayor y menor volumen de ventas.
+2. Productos con precio unitario por encima y por debajo de la media.
+3. ¿Cuál es el local con mayor volumen de ventas y en qué zona se encuentra?
+4. ¿Hay alguna marca de desodorante con mejor venta en ciertas regiones geográficas?
+5. ¿Existe un patrón estacional en las ventas de desodorantes?
+6. ¿Cuáles son los desodorantes más vendidos en diferentes cadenas de supermercados?
+
 
 CARME
-7. Cual es el producto que tiene mayor rotacion por local, por ano, por mes.
-8. Cual es el producto que tiene menor rotacion por local, por ano, por mes.
-9. Cual es el mes del anno que mas se venden desodorantes, que dia de la semana?
-10. Que tan acertada son las estimaciones de ventas en unidades d ela promocion vs. lo que realmente se vende del producto.
-11. Cambia el precio unitario de venta para productos dependiendo del local donde se venda?
-12. Cual local vende los productos mas caros en comparacion con otros locales.
-13. Cual local tiene el mayor volumen de ventas? - Es la zona del local una zona de ingresos altos, medios o bajos.  (podriamos crear una columna para clasificar los locales).
+¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes?
+¿En qué mes del año se venden más desodorantes y qué día de la semana?
+¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
+¿Cambia el precio unitario de venta de los productos dependiendo del local?
+¿Cuál es el local que vende los productos más caros en comparación con otros locales?
+¿Hay alguna cadena de supermercados en particular que venda más desodorantes que las demás?
+¿Cuál es el precio promedio de los desodorantes vendidos en diferentes cadenas de supermercados?
+¿Cuál es la relación entre las promociones y el aumento en las ventas de desodorantes? se relaciona con esta ¿Cuándo se vende más un producto, cuando tiene una promoción o cuando no la tiene?
+¿Cuál es el impacto de la duración de la promoción en el volumen de ventas?
 
 ROMINA
-14. Que impacto tiene la duracion de la promocion en el volumen de ventas?
-Realizar una comparación entre las ventas y la duración de la promoción, es decir, si la promoción duró más se produjeron más ventas? Esto es un poco complicado porque imagino que de acuerdo al % de descuento puede variar.
-15. Relación id_cadena con id_producto, supongo que con esta relación se puede ver que productos vende más una cadena en particular.
-16. Con respecto a latitud y longitud, se puede hacer un gráfico que relacione la ubicación con las ventas por ejemplo, para ver si hay alguna zona donde se produzcan más ventas que otras.
-17. Cuando se vende mas un producto cuando tiene promociones o cuando no tiene promociones?  Relacionar las ventas del producto si tiene promocion y cuando no tiene promocion.
-18. Cuales productos no se venden asi tengan una promocion?
-19. Cantidad de inventario de productos que mas se venden?
-20. Cantidad de inventario del producto que menos se vende?
-
-
-21. Precios unitarios cambian dependiendo del local.
-22. Si con la tabla podemos ver el porcentaje de descuentoo si por las diferencias de precio unitario del mismo producto en un mismo local se puede establecer la promocion.
+¿Hay una relación entre la ubicación geográfica y las ventas de desodorantes?
+¿Qué productos no se venden aunque tengan una promoción?
+¿Cuánto inventario hay de los productos que más se venden?
+¿Cuánto inventario hay del producto que menos se vende?
+¿Cuáles son las promociones más efectivas para aumentar las ventas de desodorantes?
+¿Cambia el precio unitario de venta de los productos dependiendo del local?
+¿Se puede establecer la promoción por las diferencias de precio unitario del mismo producto en un mismo local?
 
 
 
