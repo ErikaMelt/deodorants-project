@@ -21,7 +21,7 @@ def convert_file(df, col_name, data_type, date_format="%Y%m%d", col_names=None):
     Returns
     -------
     pandas.DataFrame
-        The converted DataFrame.
+        The converted DataFrame.GIT S
     Raises
     ------
     ValueError
