@@ -44,3 +44,72 @@ def plot_piechart(df, title, filename):
 
     # Show the plot
     return plt.show()
+
+
+def plot_box(df, cols_num, title='', figsize=(8,10), nrows=None, savefig=None):
+    """
+    Plots box plots for numerical columns in the DataFrame.
+
+    Args:
+        df (pandas DataFrame): The input DataFrame.
+        cols_num (list): List of column names with numerical data.
+        title (str): Title of the plot (default '').
+        figsize (tuple): Size of the figure (default (8,10)).
+        nrows (int): Number of rows for subplots (default None).
+        savefig (str): Name of the output file to save the plot (default None).
+
+    Returns:
+        None.
+    """
+
+    if not nrows:
+        nrows = len(cols_num)
+
+    sns.set_palette(sns.color_palette(color))
+
+    fig, ax = plt.subplots(nrows=nrows, ncols=1, figsize=figsize)
+    fig.subplots_adjust(hspace=1)
+    fig.suptitle(title)
+
+    for i, col in enumerate(cols_num):
+        sns.boxplot(x=col, data=df, ax=ax[i], palette=color)
+        ax[i].set_title(col)
+
+    if savefig:
+        plt.savefig(f'images/{savefig}', dpi=300, bbox_inches='tight')
+
+    plt.show()
+    return 
+
+
+
+def plot_scatter(df, col_x, col_y, title='', figsize=(8,6), savefig=None):
+    """
+    Plots a scatter plot between two columns in the DataFrame.
+
+    Args:
+        df (pandas DataFrame): The input DataFrame.
+        col_x (str): Column name for the x-axis.
+        col_y (str): Column name for the y-axis.
+        title (str): Title of the plot (default '').
+        figsize (tuple): Size of the figure (default (8,6)).
+        savefig (str): Name of the output file to save the plot (default None).
+
+    Returns:
+        None.
+    """
+
+    sns.set_palette(sns.color_palette(color))
+
+    plt.figure(figsize=figsize)
+    sns.scatterplot(x=col_x, y=col_y, data=df, palette=color)
+    plt.xlabel(col_x)
+    plt.ylabel(col_y)
+    plt.title(title)
+
+    if savefig:
+        plt.savefig(f'images/{savefig}', dpi=300, bbox_inches='tight')
+
+    plt.show()
+    return
+
