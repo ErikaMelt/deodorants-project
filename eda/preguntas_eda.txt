@@ -12,7 +12,7 @@ ERIKA
 6. ¿Cuáles son los desodorantes más vendidos en diferentes cadenas de supermercados? hecho romina, calcular mean mensuales pasar
 
 
-CARME
+CARME-
 ¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes? pendiente
 ¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
 ¿Cambia el precio unitario de venta de los productos dependiendo del local?
