@@ -4,23 +4,19 @@ Algunas preguntas se pueden unir y reducir el numero de preguntas.
 Preguntas:
 
 ERIKA
-1. Productos con mayor y menor volumen de ventas.
+1. Productos con mayor y menor volumen de ventas. hecha
 2. Productos con precio unitario por encima y por debajo de la media.
-3. ¿Cuál es el local con mayor volumen de ventas y en qué zona se encuentra?
-4. ¿Hay alguna marca de desodorante con mejor venta en ciertas regiones geográficas?
-5. ¿Existe un patrón estacional en las ventas de desodorantes?
-6. ¿Cuáles son los desodorantes más vendidos en diferentes cadenas de supermercados?
+3. ¿Cuál es el local con mayor volumen de ventas y en qué zona se encuentra? ver con zonas.
+4. ¿Hay alguna marca de desodorante con mejor venta en ciertas regiones geográficas? zonas
+5. ¿Existe un patrón estacional en las ventas de desodorantes? ¿En qué mes del año se venden más desodorantes y qué día de la semana?pendiente
+6. ¿Cuáles son los desodorantes más vendidos en diferentes cadenas de supermercados? hecho romina, calcular mean mensuales pasar
 
 
-CARME
-¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes?
-¿En qué mes del año se venden más desodorantes y qué día de la semana?
+CARME-
+¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes? pendiente
 ¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
 ¿Cambia el precio unitario de venta de los productos dependiendo del local?
-¿Cuál es el local que vende los productos más caros en comparación con otros locales?
-¿Hay alguna cadena de supermercados en particular que venda más desodorantes que las demás?
-¿Cuál es el precio promedio de los desodorantes vendidos en diferentes cadenas de supermercados?
-¿Cuál es la relación entre las promociones y el aumento en las ventas de desodorantes? se relaciona con esta ¿Cuándo se vende más un producto, cuando tiene una promoción o cuando no la tiene?
+Cuantas promociones hay por mes, por local, promociones promedio
 ¿Cuál es el impacto de la duración de la promoción en el volumen de ventas?
 
 ROMINA
@@ -31,6 +27,12 @@ ROMINA
 ¿Cuáles son las promociones más efectivas para aumentar las ventas de desodorantes?
 ¿Cambia el precio unitario de venta de los productos dependiendo del local?
 ¿Se puede establecer la promoción por las diferencias de precio unitario del mismo producto en un mismo local?
+
+OTRAS EXTRA
+- Zonas- estudio por agrupacion de latitud y longitud. Ver locales asociados a cada zona. Medias de venta de cada producto.
+- Sacar tabla de productos que nunca han tenido una promoción para indicar conclusión que no se puede analizar el efect de las promociones
+de las ventas, a evaluar con negocio si seria similar a otro producto para asimilar el efecto de la promoción.
+
 
 
 
