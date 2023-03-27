@@ -13,11 +13,14 @@ ERIKA
 
 
 CARME-
-¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes? pendiente
+
+¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes?
+¿Hay un efecto de las promociones con la rotación de stock mensual?
 ¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
 ¿Cambia el precio unitario de venta de los productos dependiendo del local?
 Cuantas promociones hay por mes, por local, promociones promedio
 ¿Cuál es el impacto de la duración de la promoción en el volumen de ventas?
+
 
 ROMINA
 ¿Hay una relación entre la ubicación geográfica y las ventas de desodorantes?
