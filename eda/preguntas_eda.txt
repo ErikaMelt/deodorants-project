@@ -13,20 +13,23 @@ ERIKA
 
 
 CARME-
-¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes? pendiente
-¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
-¿Cambia el precio unitario de venta de los productos dependiendo del local?
-Cuantas promociones hay por mes, por local, promociones promedio
-¿Cuál es el impacto de la duración de la promoción en el volumen de ventas?
+
+1. ¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes?
+2. Cuantas promociones hay por mes, por local, promociones promedio
+3. ¿Hay un efecto de las promociones con la rotación de stock mensual?
+4. ¿Cuál es el impacto de la duración de la promoción en el volumen de ventas? - LA HA HECHO ROMINA
+5. ¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
+6. ¿Cambia el precio unitario de venta de los productos dependiendo del local?
+
 
 ROMINA
 ¿Hay una relación entre la ubicación geográfica y las ventas de desodorantes?
 ¿Qué productos no se venden aunque tengan una promoción?
 ¿Cuánto inventario hay de los productos que más se venden?
 ¿Cuánto inventario hay del producto que menos se vende?
-¿Cuáles son las promociones más efectivas para aumentar las ventas de desodorantes?
-¿Cambia el precio unitario de venta de los productos dependiendo del local?
-¿Se puede establecer la promoción por las diferencias de precio unitario del mismo producto en un mismo local?
+¿Cuáles son las promociones más efectivas para aumentar las ventas de desodorantes? -
+¿Cambia el precio unitario de venta de los productos dependiendo del local?  REPETIDA, LA HACE CARME
+¿Se puede establecer la promoción por las diferencias de precio unitario del mismo producto en un mismo local? REPETIDA, LA HACE CARME
 
 OTRAS EXTRA
 - Zonas- estudio por agrupacion de latitud y longitud. Ver locales asociados a cada zona. Medias de venta de cada producto.
