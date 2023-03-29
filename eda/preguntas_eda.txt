@@ -34,6 +34,15 @@ ROMINA
 OTRAS EXTRA
 
 
+Como abordar el problema? Nada especial
+Fases del proyecto y del proceso analítico? Descripción general.
+Tecnología a utilizar según las fases? Erika, done
+Arquitectura según las fases? Erika, done
+Propuestas de valor para el cliente a lo largo del proyecto? Buscar, y poner en comun CARME/ROMNA
+Esfuerzos necesarios y perfiles necesarios?  Buscar, y poner en comun CARME/ROMINA
+Baseline de resultados iniciales? Modelo para probar - Erika
+
+
 ZONAS
 
 3. 
