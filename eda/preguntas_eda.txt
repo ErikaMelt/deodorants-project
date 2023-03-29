@@ -18,8 +18,8 @@ CARME-
 2. Cuantas promociones hay por mes, por local, promociones promedio
 3. ¿Hay un efecto de las promociones con la rotación de stock mensual?
 4. ¿Cuál es el impacto de la duración de la promoción en el volumen de ventas? - LA HA HECHO ROMINA
+4. ¿Cambia el precio unitario de venta de los productos dependiendo del local?
 5. ¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
-6. ¿Cambia el precio unitario de venta de los productos dependiendo del local?
 
 
 ROMINA
