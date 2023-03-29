@@ -4,33 +4,46 @@ Algunas preguntas se pueden unir y reducir el numero de preguntas.
 Preguntas:
 
 ERIKA
-1. Productos con mayor y menor volumen de ventas.
+1. Productos con mayor y menor volumen de ventas. hecha TOP (10) - DOC OK, Pasar/agregar a media
+- Zonas- estudio por agrupacion de latitud y longitud. Ver locales asociados a cada zona. Medias de venta de cada producto.
+¿Cuál es el local con mayor volumen de ventas y en qué zona se encuentra? ver con zonas.
+ ¿Hay alguna marca de desodorante con mejor venta en ciertas regiones geográficas? zonas
+- Sacar tabla de productos que nunca han tenido una promoción para indicar conclusión que no se puede analizar el efect de las promociones
+de las ventas, a evaluar con negocio si seria similar a otro producto para asimilar el efecto de la promoción.
+
+CARME-
+
+1. ¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes?
+2. Cuantas promociones hay por año, mes, por local, promociones promedio
+3. ¿Hay un efecto de las promociones con la rotación de stock mensual?
+4. ¿Cambia el precio unitario de venta de los productos dependiendo del local?
+5. ¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
 2. Productos con precio unitario por encima y por debajo de la media.
-3. ¿Cuál es el local con mayor volumen de ventas y en qué zona se encuentra?
-4. ¿Hay alguna marca de desodorante con mejor venta en ciertas regiones geográficas?
-5. ¿Existe un patrón estacional en las ventas de desodorantes?
-6. ¿Cuáles son los desodorantes más vendidos en diferentes cadenas de supermercados?
 
 
-CARME
-¿Cuál es el producto con la mayor y menor rotación por local, por año y por mes?
-¿En qué mes del año se venden más desodorantes y qué día de la semana?
-¿Qué tan precisas son las estimaciones de ventas en unidades de la promoción en comparación con las ventas reales del producto?
-¿Cambia el precio unitario de venta de los productos dependiendo del local?
-¿Cuál es el local que vende los productos más caros en comparación con otros locales?
-¿Hay alguna cadena de supermercados en particular que venda más desodorantes que las demás?
-¿Cuál es el precio promedio de los desodorantes vendidos en diferentes cadenas de supermercados?
-¿Cuál es la relación entre las promociones y el aumento en las ventas de desodorantes? se relaciona con esta ¿Cuándo se vende más un producto, cuando tiene una promoción o cuando no la tiene?
-¿Cuál es el impacto de la duración de la promoción en el volumen de ventas?
 
 ROMINA
-¿Hay una relación entre la ubicación geográfica y las ventas de desodorantes?
-¿Qué productos no se venden aunque tengan una promoción?
-¿Cuánto inventario hay de los productos que más se venden?
-¿Cuánto inventario hay del producto que menos se vende?
-¿Cuáles son las promociones más efectivas para aumentar las ventas de desodorantes?
-¿Cambia el precio unitario de venta de los productos dependiendo del local?
-¿Se puede establecer la promoción por las diferencias de precio unitario del mismo producto en un mismo local?
+1. Ventas por cadena de todo el periodo. HECHA Y DOC OK, Añadir más descriptivo
+2. ¿Existe un patrón estacional en las ventas de desodorantes? ¿En qué mes del año se venden más desodorantes y qué día de la semana?ROMINA
+3. Análisis de ventas con promoción y sin promoción en función del dia de la semana.
+4. ¿Hay una relación entre la ubicación geográfica y las ventas de desodorantes? 
+5. Análisis de MEDIAS por año ventas con promoción y sin promoción. En qué % de productos las promociones son efectivas. Hay productos que las promociones no son efectivas? (MEAN-AÑO/MES). Cuales son las mas efectivas, top 10?
+6. Análisis del impacto de la variable duracion de la promoción en las ventas. MEAN diariais.
 
 
+OTRAS EXTRA
 
+
+Como abordar el problema? Nada especial
+Fases del proyecto y del proceso analítico? Descripción general.
+Tecnología a utilizar según las fases? Erika, done
+Arquitectura según las fases? Erika, done
+Propuestas de valor para el cliente a lo largo del proyecto? Buscar, y poner en comun CARME/ROMNA
+Esfuerzos necesarios y perfiles necesarios?  Buscar, y poner en comun CARME/ROMINA
+Baseline de resultados iniciales? Modelo para probar - Erika
+
+
+ZONAS
+
+3. 
+4.
