@@ -9,17 +9,16 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
 # Cargar datos
-df = pd.read_csv("../data/deodorants_final_merged_v1.csv")
+df = pd.read_csv("../data/deodorants_model.csv")
 
-# Seleccionar columnas para predecir las ventas
-cols = ["precio_unitario", "stock_unidades", "ventas_estimadas_promo", "duracion_promo",
+
+cols = ["precio_unitario", "stock_unidades", "duracion_promo",
         "mov_month", "mov_year", "idb",
-        "punto_dist", "local", "is_weekend",
-        "zona", "tiene_promo", "id_producto"]
+         "zona", "tiene_promo", "id_producto"]
 
 # Seleccionar columnas numéricas y categóricas
-num_cols = ["precio_unitario", "stock_unidades", "ventas_estimadas_promo", "duracion_promo"]
-cat_cols = ["punto_dist", "local", "is_weekend", "zona", "tiene_promo"]
+num_cols = ["precio_unitario", "stock_unidades",  "duracion_promo"]
+cat_cols = ["zona", "tiene_promo"]
 
 X = df[cols]
 y = df["venta_unidades"]
@@ -74,7 +73,7 @@ rf_pipeline.fit(X_train_transformed_df, y_train)
 print(f"Tiempo de entrenamiento: {time.time() - start_time} segundos")
 
 # Guardar modelo en archivo pickle
-with open('rf_pipeline.pkl', 'wb') as file:
+with open('pickles/rf_pipeline.pkl', 'wb') as file:
     pickle.dump(rf_pipeline, file)
 
 # Hacer predicciones en conjunto de prueba

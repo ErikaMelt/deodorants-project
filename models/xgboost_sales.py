@@ -9,7 +9,7 @@ from xgboost import XGBRegressor
 from sklearn.metrics import r2_score
 
 # Cargar datos
-df = pd.read_csv("../data/deodorants_final_merged_v1.csv")
+df = pd.read_csv("../data/deodorants_model.csv")
 
 # Seleccionar columnas para predecir las ventas
 cols = ["precio_unitario",  "duracion_promo",
@@ -72,7 +72,7 @@ xgb_pipeline.fit(X_train_transformed_df, y_train)
 print(f"Tiempo de entrenamiento: {time.time() - start_time} segundos")
 
 # Guardar modelo en archivo pickle
-with open('xgb_pipeline.pkl', 'wb') as file:
+with open('pickles/xgb_pipeline.pkl', 'wb') as file:
     pickle.dump(xgb_pipeline, file)
 
 # Hacer predicciones en conjunto de prueba
