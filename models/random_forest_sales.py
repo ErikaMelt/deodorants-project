@@ -12,13 +12,17 @@ from sklearn.metrics import r2_score
 df = pd.read_csv("../data/deodorants_model.csv")
 
 
-cols = ["precio_unitario", "stock_unidades", "duracion_promo",
-        "mov_month", "mov_year", "idb",
-         "zona", "tiene_promo", "id_producto"]
+cols = [
+    'precio_unitario', 'stock_unidades', 'mov_year', 'punto_dist', 'zona',
+    'id_cadena', 'cd_abast', 'mov_weekday', 'is_weekend',
+    'mov_month', 'longitud', 'nro_prom', 'latitud',
+    'id_region', 'local', 'idb', 'id_producto',
+    'duracion_promo', 'tiene_promo'
+]
 
 # Seleccionar columnas numéricas y categóricas
 num_cols = ["precio_unitario", "stock_unidades",  "duracion_promo"]
-cat_cols = ["zona", "tiene_promo"]
+cat_cols = ["punto_dist", "zona", "tiene_promo", 'id_cadena', 'cd_abast', 'is_weekend','local' ]
 
 X = df[cols]
 y = df["venta_unidades"]
